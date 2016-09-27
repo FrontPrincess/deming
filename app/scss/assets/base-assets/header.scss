@@ -5,6 +5,13 @@
 		@extend %clearfix;
 		&__logo{
 			font-family: 'Klavika-MediumPlain';
+   			background-image: url(../img/base/main-logo.png);
+   			background-repeat: no-repeat;
+   			background-position: 23px 2px;
+   			padding-left: 50px;
+   			padding-top: 16px;
+   			padding-bottom: 10px;
+   			float: left;
 		}
 		&__logo-title {
 			margin-bottom: 1px;
@@ -22,6 +29,9 @@
 				padding-left: 4px;
 				text-transform: uppercase;
 			}
+		}
+		&__info{
+			float: right;
 		}
 	}
 	

@@ -21,8 +21,14 @@ a {
 	text-decoration: none;
 }
 
+p a{
+	text-decoration: underline;
+	color: color('primary');
+}
+
 .my-container {
-	width: gridValue('container');
+	position: relative;
+	max-width: gridValue('container');
 	margin: 0 auto;
 }
 /*END:base*/
