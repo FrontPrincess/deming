@@ -2,12 +2,14 @@
 .site-header {
 	.header-main {
 		margin-top: 17px;
-		
+		@extend %clearfix;
+		&__logo{
+			font-family: 'Klavika-MediumPlain';
+		}
 		&__logo-title {
-			margin-bottom: 0;
+			margin-bottom: 1px;
 			font-size: 34px;
 			a {
-				font-family: 'Klavika-MediumPlain';
 				color: #231f20;
 				text-transform: uppercase;
 				}
@@ -15,8 +17,9 @@
 		&__logo-subtitle { 
 			font-size: 11px;
 			a {
-				font-family: 'Myriad-ProSemibold';
 				color: #858689;
+				letter-spacing: 0.1em;
+				padding-left: 4px;
 				text-transform: uppercase;
 			}
 		}
