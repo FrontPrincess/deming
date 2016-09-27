@@ -1,3 +1,29 @@
 /*header*/
+.site-header {
+	.header-main {
+		margin-top: 17px;
+		
+		&__logo-title {
+			margin-bottom: 0;
+			font-size: 34px;
+			a {
+				font-family: 'Klavika-MediumPlain';
+				color: #231f20;
+				text-transform: uppercase;
+				}
+			}
+		&__logo-subtitle { 
+			font-size: 11px;
+			a {
+				font-family: 'Myriad-ProSemibold';
+				color: #858689;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+}
+
+
 
 /*END:header*/
