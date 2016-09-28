@@ -7,14 +7,14 @@
 			font-family: 'Klavika-MediumPlain';
    			background-image: url(../img/base/main-logo.png);
    			background-repeat: no-repeat;
-   			background-position: 23px 2px;
-   			padding-left: 50px;
+   			background-position: 24px 4px;
+   			padding-left: 52px;
    			padding-top: 16px;
    			padding-bottom: 10px;
    			float: left;
 		}
 		&__logo-title {
-			margin-bottom: 1px;
+			margin-bottom: 2px;
 			font-size: 34px;
 			a {
 				color: #231f20;
@@ -26,12 +26,42 @@
 			a {
 				color: #858689;
 				letter-spacing: 0.1em;
-				padding-left: 4px;
+				padding-left: 3px;
 				text-transform: uppercase;
 			}
 		}
 		&__info{
+			text-align: right;
 			float: right;
+			&-contact{
+				font-family: 'Myriad-ProRegular';
+				margin-bottom: 6px;
+				/* padding-right: 1px; */
+				p {
+					font-size: 12px;
+					color: #585755;
+					margin-bottom: 4px;
+				}
+				a {
+					font-size: 20px;
+					color: #373737;
+
+				}
+			}
+			&-list{
+				&-item{
+					display: inline-block;
+					text-align: center;
+					a{
+						display: inline-block;
+						font-family: 'Zurich-CondensedBT';
+						text-transform: uppercase;
+						font-size: 13px;
+						color: #209a28;
+						padding: 10px 4.5px;
+					}
+				}
+			}
 		}
 	}
 	
