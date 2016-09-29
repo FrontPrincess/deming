@@ -16,7 +16,7 @@
 		&__logo-title {
 			margin-bottom: 2px;
 			font-size: 34px;
-			a {
+			a { 
 				color: #231f20;
 				text-transform: uppercase;
 				}
@@ -49,6 +49,9 @@
 				}
 			}
 			&-list{
+				display: table;
+				width: 100%;
+				font-size: 0;
 				&-item{
 					display: inline-block;
 					text-align: center;
@@ -58,7 +61,18 @@
 						text-transform: uppercase;
 						font-size: 13px;
 						color: #209a28;
-						padding: 10px 4.5px;
+						padding: 10px 6.4px;
+						-webkit-transition: all 0.2s ease-in;
+						-o-transition: all 0.2s ease-in;
+						-moz-transition: all 0.2s ease-in;
+						transition: all 0.2s ease-in;
+						&:hover {
+							background-color: #209a28;
+							color: #ece6d6;
+						}
+						&:focus {
+							@extend :hover;
+						}
 					}
 				}
 			}
