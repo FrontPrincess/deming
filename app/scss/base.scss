@@ -31,4 +31,8 @@ p a{
 	max-width: gridValue('container');
 	margin: 0 auto;
 }
+
+.main-info-container {
+	max-width: gridValue('maininfo');
+}
 /*END:base*/
