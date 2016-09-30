@@ -2,6 +2,7 @@
 .site-header {
 	.header-main {
 		margin-top: 17px;
+		margin-bottom: 13px;
 		@extend %clearfix;
 		&__logo{
 			font-family: 'Klavika-MediumPlain';
@@ -23,11 +24,13 @@
 			}
 		&__logo-subtitle { 
 			font-size: 11px;
+			margin-bottom: 5px;
 			a {
 				color: #858689;
 				letter-spacing: 0.1em;
 				padding-left: 3px;
 				text-transform: uppercase;
+				
 			}
 		}
 		&__info{
@@ -52,6 +55,7 @@
 				display: table;
 				width: 100%;
 				font-size: 0;
+				margin-bottom: 5px;
 				&-item{
 					display: inline-block;
 					text-align: center;
@@ -78,7 +82,58 @@
 			}
 		}
 	}
-	
+	.header-nav {
+		
+
+		&__nav {
+			&-list {
+				margin-bottom: 0px;
+				width: 100%;
+  				border: 1px solid #0b932f;
+  				/* stroke */
+		        -webkit-border-radius: 5px;
+				    -moz-border-radius: 5px;
+				        border-radius: 5px;
+  				/* border radius */
+	  			-webkit-background-clip: padding-box;
+	  			   -moz-background-clip: padding-box;
+	  			     -o-background-clip: padding-box;
+	  			        background-clip: padding-box;
+  				/* prevents bg color from leaking outside the border */
+ 				background-color: #43ab2d;
+ 				/* layer fill content */
+
+	  			-webkit-box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+	  			   -moz-box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+	  			        box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+  				/* drop shadow and inner shadow */
+  				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE4OSAzNCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxODkiIGhlaWdodD0iMzQiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+  				/* gradient overlay */
+	            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
+	            background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+	            background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+	            background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+	            background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+	            text-align: center;
+				@extend .header-main__info-list;
+				&-item{
+					@extend .header-main__info-list-item;
+						& a {
+							@extend a;
+							color: #fff;
+  							/* text color */
+  							font-family: "Zurich-BoldCondensedBT";
+  							font-size: 15px;
+  							text-shadow: 0 -2px 0 rgba(0, 92, 19, .63);
+  							padding: 12.71px 27px;
+  							&:hover {
+  										color:#fff;
+  									}
+					}
+				}
+			}
+		}
+	}
 }
 
 
