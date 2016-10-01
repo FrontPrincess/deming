@@ -1,3 +1,11 @@
-.main-info {
+.main-content {
 	background-color: #fff;
+	.home-slider {
+		.slider-list {
+			&-item {
+				display: inline-block;
+			}
+		}
+	}
 }
+
