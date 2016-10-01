@@ -30,6 +30,7 @@ p a{
 	position: relative;
 	max-width: gridValue('container');
 	margin: 0 auto;
+	@extend %clearfix;
 }
 
 .main-content {

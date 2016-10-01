@@ -2,8 +2,20 @@
 	background-color: #fff;
 	.home-slider {
 		.slider-list {
+			.slick-slide{
+				position: relative;
+			}
 			&-item {
 				display: inline-block;
+				&__img {
+					width: 100%;
+				}
+				&__description {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 40%;
+				}
 			}
 		}
 	}
