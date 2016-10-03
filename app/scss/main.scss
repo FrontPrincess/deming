@@ -94,6 +94,39 @@
 			}
 		}
 	}
+	&__description {
+		@extend %clearfix;
+		position: relative;
+		&-text {
+			float: left;
+			width: 462px;
+
+		}
+		&-title {
+			text-transform: uppercase;
+			font-family: "Zurich-CondensedBT";
+			font-size: 26px;
+			color: #444137;
+			font-weight: normal;
+		}
+		&-description {
+			p {
+				font-family: Arial;
+				font-size: 12px;
+				color: #595447;
+				line-height: 20px;
+			}
+		}
+		&-img {
+			float: right;
+			position: absolute;
+			top: -35px;
+			right: 46px;
+			z-index: 9999;
+
+		}
+	}	
+
 }
 
 
