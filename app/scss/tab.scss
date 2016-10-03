@@ -40,6 +40,12 @@
 			&-item {
 				display: inline-block;
 				width: 31%;
+				&-img {
+					border: 4px solid #e9e6df;
+					-webkit-border-radius: 5px;
+					   -moz-border-radius: 5px;
+					        border-radius: 5px;
+				}
 				&-title {
 					font-size: 18px;
 				}
