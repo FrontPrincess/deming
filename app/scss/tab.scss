@@ -1,0 +1,54 @@
+@import 'assets/settings';
+
+.tab-block {
+	.tab-list {
+		&__list {
+			display: table;
+			width: 100%;
+			font-size: 0;
+			border: 1px solid #cfcdc5;
+			-webkit-border-radius: 5px;
+			   -moz-border-radius: 5px;
+			        border-radius: 5px;
+			&-item {
+				display: inline-block;
+				width: 33%;
+				text-align: center;
+				border-right: 1px solid #cfcdc5;
+				&:last-child {
+    					border-right: none;
+    			}
+
+				&-link {
+					font-family: "Zurich-CondensedBT";
+					font-size: 18px;
+					color: #444137;
+					display: block;
+    				line-height: 20px;
+    				padding: 9px 0;
+    				
+
+    				/* border: 1px solid black; */
+				}
+			}
+		}
+	}
+	.tab-content {
+		&__list {
+			@extend .tab-list__list;
+			border: none;
+			&-item {
+				display: inline-block;
+				width: 31%;
+				&-title {
+					font-size: 18px;
+				}
+				&-description {
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
