@@ -36,4 +36,9 @@ p a{
 .main-content {
 	max-width: gridValue('maincontent');
 }
+
+.sidebar {
+	width: gridValue('sidebar')
+}
+
 /*END:base*/

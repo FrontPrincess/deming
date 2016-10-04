@@ -9,7 +9,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     &-item {
-    	position: relative;
+        position: relative;
         display: inline-block;
         width: 33%;
         text-align: center;
@@ -25,31 +25,38 @@
             line-height: 20px;
             padding: 9px 0;
             color: #444137;
+            @extend %default-transition;
+            &:hover {
+                text-shadow: none;
+            }
+            &:focus {
+                @extend .tab-list__list-item-link:hover;
+            }
             
             & .triangle {
-            	position: absolute;
-            	top: 0;
-            	left: 0;
-            	width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 5px 0 5px 6px;
-				border-color: transparent transparent transparent #0f951e;
-            	&--active {
-            		position: absolute;
-    				bottom: -6px;
-    				right: 104px;
-    				width: 0;
-    				height: 0;
-    				border-width: 6px 5px 0 5px;
-    				border-style: solid;
-    				border-color: #0f951e transparent transparent transparent;
-    				-webkit-transform: translateX(-50%);
-    				   -moz-transform: translateX(-50%);
-    				    -ms-transform: translateX(-50%);
-    				     -o-transform: translateX(-50%);
-    				        transform: translateX(-50%);
-            	}
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 5px 0 5px 6px;
+                border-color: transparent transparent transparent #0f951e;
+                &--active {
+                    position: absolute;
+                    bottom: -5px;
+                    right: 104px;
+                    width: 0;
+                    height: 0;
+                    border-width: 6px 5px 0 5px;
+                    border-style: solid;
+                    border-color: #0f951e transparent transparent transparent;
+                    -webkit-transform: translateX(-50%);
+                       -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                         -o-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                }
             }
             &--active {
                 color: #fff; /* text color */
@@ -80,15 +87,19 @@
 
 
 .tab-content__list {
-    margin: 0 -10.5px;
+    /* margin: 0 -10.5px; */
     border: none;
 
     @extend .tab-list__list;
     &-item {
         display: inline-block;
-        width: 33.33%;
-        padding: 0 10.5px;
+        width: 31.20567375886525%;
+        /* padding: 0 10.5px; */
         vertical-align: top;
+        margin-right: 21px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
         &-img {
             width: 100%;
             border: 4px solid #e9e6df;
@@ -98,7 +109,7 @@
             margin-bottom: 12px;
         }
         &-title {
-        	padding-left: 4px;
+            padding-left: 4px;
             font-family: Arial;
             font-size: 14px;
             line-height: 20px;

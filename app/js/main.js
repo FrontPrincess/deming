@@ -6,4 +6,8 @@ $(document).ready(function() {
 		dots: true,
 		arrows: false,
 	})
+
+	$('input, select').styler({
+		selectSmartPositioning: false
+	})
 });
