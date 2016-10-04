@@ -1,60 +1,88 @@
 @import 'assets/settings';
 
-.tab-block {
-	.tab-list {
-		&__list {
-			display: table;
-			width: 100%;
-			font-size: 0;
-			border: 1px solid #cfcdc5;
-			-webkit-border-radius: 5px;
-			   -moz-border-radius: 5px;
-			        border-radius: 5px;
-			&-item {
-				display: inline-block;
-				width: 33%;
-				text-align: center;
-				border-right: 1px solid #cfcdc5;
-				&:last-child {
-    					border-right: none;
-    			}
+.tab-list__list {
+    display: table;
+    width: 100%;
+    font-size: 0;
+    border: 1px solid #cfcdc5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    &-item {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        border-right: 1px solid #cfcdc5;
+        &:last-child {
+            border-right: none;
+        }
+        &-link {
+            display: block;
+            font-family: 'Zurich-CondensedBT';
+            font-size: 18px;
+            line-height: 20px;
+            padding: 9px 0;
+            color: #444137;
+            /* border: 1px solid black; */
+            &--active {
+                color: #fff; /* text color */
+                border: 1px solid #0b932f; /* stroke */
+                -webkit-border-radius: 5px 0 0 5px;
+                -moz-border-radius: 5px 0 0 5px;
+                border-radius: 5px 0 0 5px; /* border radius */
+                background-color: #fff; /* layer fill content */
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIzMCAzOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzkiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+                background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+                background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+                background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+                background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
+                background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+                -webkit-background-clip: padding-box;
+                -moz-background-clip: padding;
+                background-clip: padding-box; /* prevents bg color from leaking outside the border */
+                -webkit-box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+                -moz-box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+                box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+                text-shadow: 0 -2px 0 rgba(0,92,19,0.63); /* drop shadow */
 
-				&-link {
-					font-family: "Zurich-CondensedBT";
-					font-size: 18px;
-					color: #444137;
-					display: block;
-    				line-height: 20px;
-    				padding: 9px 0;
-    				
+                -o-background-clip: padding-box;
+            }
+        }
+    }
+}
 
-    				/* border: 1px solid black; */
-				}
-			}
-		}
-	}
-	.tab-content {
-		&__list {
-			@extend .tab-list__list;
-			border: none;
-			&-item {
-				display: inline-block;
-				width: 31%;
-				&-img {
-					border: 4px solid #e9e6df;
-					-webkit-border-radius: 5px;
-					   -moz-border-radius: 5px;
-					        border-radius: 5px;
-				}
-				&-title {
-					font-size: 18px;
-				}
-				&-description {
-					p {
-						font-size: 12px;
-					}
-				}
-			}
-		}
-	}
+
+.tab-content__list {
+    margin: 0 -10.5px;
+    border: none;
+
+    @extend .tab-list__list;
+    &-item {
+        display: inline-block;
+        width: 33.33%;
+        padding: 0 10.5px;
+        vertical-align: top;
+        &-img {
+            width: 100%;
+            border: 4px solid #e9e6df;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        &-title {
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 4px;
+            color: color('secondary');
+        }
+        &-description {
+            p {
+                font-size: 12px;
+                line-height: 18px;
+
+                @extend .tab-content__list-item-title;
+            }
+        }
+    }
 }
