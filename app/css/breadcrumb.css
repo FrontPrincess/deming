@@ -1,0 +1,16 @@
+.breadcrumb {
+    padding: 4.6px 22px;
+}
+
+.breadcrumb-list {
+    margin-bottom: 0;
+}
+
+.breadcrumb-list-item {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    color: #14961c;
+}
+/*# sourceMappingURL=sourcemaps/breadcrumb.css.map */

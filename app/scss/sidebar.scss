@@ -6,6 +6,9 @@
 }
 
 .search-block {
+	&__description {
+		margin-bottom: 20px;
+	}
 	&__title {
 		font-family: 'Myriad-ProRegular';
 		font-size: 14px;
@@ -18,6 +21,41 @@
 		font-family: Arial;
 		font-size: 12px;
 		color: color('tertiary');
+		margin-bottom: 15px;
 	} 
+
+	.jq-selectbox.jqselect {
+		margin-bottom: 16px;
+		width: 200px;
+		border: 1px solid #cfcdc5; /* stroke */
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; /* border radius */
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		-o-background-clip: padding-box;
+		   background-clip: padding-box; /* prevents bg color from leaking outside the border */
+		background-color: #fff; /* layer fill content */
+		-moz-box-shadow: 0 0 0 3px #e7e5dd, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+		-webkit-box-shadow: 0 0 0 3px #e7e5dd, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+		box-shadow: 0 0 0 3px #e7e5dd, inset 0 -1px 0 #fff; /* drop shadow and inner shadow */
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSI2Ni41JSIgeDI9IjUwJSIgeTI9IjMzLjUlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+        background-image: -moz-linear-gradient(bottom, #f3f3f1 33.5%, #fff 66.5%); /* gradient overlay */
+        background-image: -o-linear-gradient(bottom, #f3f3f1 33.5%, #fff 66.5%); /* gradient overlay */
+        background-image: -webkit-linear-gradient(bottom, #f3f3f1 33.5%, #fff 66.5%); /* gradient overlay */
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(33.5%, #f3f3f1), color-stop(66.5%, #fff));
+        background-image: linear-gradient(bottom, #f3f3f1 33.5%, #fff 66.5%); /* gradient overlay */
+		}
+		
+		.jq-selectbox__select {
+			height: 23px;
+		}
+
+		.jq-selectbox__select-text {
+			font-family: Arial;
+			font-size: 11px;
+		}
+		
 	
+
 } 

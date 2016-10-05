@@ -141,31 +141,77 @@
 			<div class="sidebar">
 				<!-- .search-block -->
 				<div class="search-block">
-					<h5 class="search-block__title">holiday search</h5>
-					<span class="search-block__text">Start your holiday search here:</span>
-					<select name="region" id="">
-						<option value="">Select Region</option>
-					</select>
-					<select name="category" id="">
-						<option value="">Select Category</option>
-					</select>
-					<select name="date" id="">
-						<option value="">Select Date</option>
-					</select>
-					<select name="price" id="">
-						<option value="">Select Price</option>
-					</select>
-					<input type="submit" value="search holidays" />
+					<form action="#">
+						<div class="search-block__description">
+							<h5 class="search-block__title">holiday search</h5>
+							<span class="search-block__text">Start your holiday search here:</span>
+						</div>
+						<fieldset>
+							<select name="region" id="">
+								<option value="">Select Region</option>
+							</select>
+							<select name="category" id="">
+								<option value="">Select Category</option>
+							</select>
+							<select name="date" id="">
+								<option value="">Select Date</option>
+							</select>
+							<select name="price" id="">
+								<option value="">Select Price</option>
+							</select>
+						</fieldset>
+						<fieldset>
+							<button type="submit">search holidays</button>
+						</fieldset>
+					</form>
 				</div>
 				<!--END:.search-block -->
 				<!-- .quick-search-block -->
-				<div class="quick-search-block"></div>
+				<div class="quick-search-block">
+					<form action="#">
+						<div class="quick-search-block__description">
+							<h5 class="quick-search-block__title">quick search</h5>
+							<span class="quick-search-block__text">Enter a country or tour code:</span>
+						</div>
+							<button type="submit">search</button>
+					</form>
+				</div>
 				<!--END:.quick-search-block -->
-				<!-- .sing-up-block -->
-				<div class="sing-up-block"></div>
-				<!--END:.sing-up-block -->
+				<!-- .sign-up-block -->
+				<div class="sign-up-block">
+					<form action="#">
+						<h5 class="sing-up-block__title">Newsletter Signup</h5>
+						<span class="sing-up-block__text">New tours, special offers, extra departures and latest news</span>
+						<input type="email" placeholder="Enter Email ..." />
+						<input type="text" placeholder="Enter Name ..." />
+						<button type="submit">sign up</button>
+					</form>
+				</div>
+				<!--END:.sign-up-block -->
 				<!-- .news-block -->
-				<div class="news-block"></div>
+				<article class="news-block">
+					<h5 class="news-block__title">Latest News</h5>
+					<ul class="news-block__list">
+						<li class="news-block__list-item">
+							<h6 class="news-block__list-item-title"><a href="#">Watch Brown Bears in Sweden 11/05/2010</a></h6>
+							<div class="news-block__list-item-text">
+								<p><a href="#">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</a></p>
+							</div>
+						</li>
+						<li class="news-block__list-item">
+							<h6 class="news-block__list-item-title"><a href="#">Watch Brown Bears in Sweden 11/05/2010</a></h6>
+							<div class="news-block__list-item-text">
+								<p><a href="#">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</a></p>
+							</div>
+						</li>
+						<li class="news-block__list-item">
+							<h6 class="news-block__list-item-title"><a href="#">Watch Brown Bears in Sweden 11/05/2010</a></h6>
+							<div class="news-block__list-item-text">
+								<p><a href="#">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</a></p>
+							</div>
+						</li>
+					</ul>
+				</article>
 				<!--END:.news-block -->
 			</div>
 			<!--END:.sidebar -->
