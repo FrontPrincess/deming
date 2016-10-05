@@ -63,13 +63,10 @@
                         font-family: 'Zurich-CondensedBT';
                         font-size: 13px;
                         padding: 10px 6.4px;
-                        /* -webkit-transition: all 0.2s ease-in;
-                        -moz-transition: all 0.2s ease-in;
-                        -o-transition: all 0.2s ease-in;
-                        transition: all 0.2s ease-in; */
-                        @extend %default-transition;
                         text-transform: uppercase;
                         color: #209a28;
+
+                        @extend %default-transition;
                         &:hover {
                             color: #ece6d6;
                             background-color: #209a28;
@@ -91,8 +88,8 @@
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
                 border-radius: 5px;
+
                 @extend %default-btn-bg;
-                
                 @extend .header-main__info-list;
                 &-item {
                     @extend .header-main__info-list-item;
@@ -118,6 +115,3 @@
 
 
 /*END:header*/
-
-
-

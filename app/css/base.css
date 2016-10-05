@@ -39,13 +39,6 @@
 }
 
 
-/* 
-%default-btn-text {
-    color: #fff;
-    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
-} */
-
-
 /*header*/
 
 .site-header .header-main {
@@ -128,10 +121,6 @@
     font-size: 13px;
     display: inline-block;
     padding: 10px 6.4px;
-    /* -webkit-transition: all 0.2s ease-in;
-                        -moz-transition: all 0.2s ease-in;
-                        -o-transition: all 0.2s ease-in;
-                        transition: all 0.2s ease-in; */
     text-transform: uppercase;
     color: #209a28;
 }

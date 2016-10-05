@@ -5,10 +5,20 @@
 }
 
 
-/* 
-%default-btn-text {
-    color: #fff;
-    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+/* .main-block .my-container {
+    border: 1px solid #e1dbcd; stroke
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; border radius
+    
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box; prevents bg color from leaking outside the border
+    -webkit-box-shadow: inset 0 0 0 1px #fff; inner shadow
+    -moz-box-shadow: inset 0 0 0 1px #fff; inner shadow
+    box-shadow: inset 0 0 0 1px #fff; inner shadow
+
+    -o-background-clip: padding-box;
 } */
 
 .main-content {
@@ -47,20 +57,20 @@
     -moz-border-radius: 10px / 11px;
     border-radius: 50%;
     border-radius: 10px / 11px;
-    /* prevents bg color from leaking outside the border */
-    background-color: #6b685d;
-    -webkit-background-clip: padding-box;
     /* border radius */
+    background-color: #6b685d;
+    /* layer fill content */
+    -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
-    /* inner shadow */
+    /* prevents bg color from leaking outside the border */
     -webkit-box-shadow: inset 1px -1px 0 rgba(192, 186, 166, .75);
-    /* layer fill content */
+    /* inner shadow */
     -moz-box-shadow: inset 1px -1px 0 rgba(192, 186, 166, .75);
     /* inner shadow */
     box-shadow: inset 1px -1px 0 rgba(192, 186, 166, .75);
-    -o-background-clip: padding-box;
     /* inner shadow */
+    -o-background-clip: padding-box;
 }
 
 .main-content .home-slider .slider-list .slick-dots .slick-active button {
@@ -87,10 +97,10 @@
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
+    /* prevents bg color from leaking outside the border */
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    /* prevents bg color from leaking outside the border */
     -o-background-clip: padding-box;
 }
 
