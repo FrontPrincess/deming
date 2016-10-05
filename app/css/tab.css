@@ -5,6 +5,42 @@
     transition: all .15s ease-in;
 }
 
+.tab-list__list-item-link--active {
+    border: 1px solid #0b932f;
+    /* stroke */
+    background-color: #fff;
+    /* layer fill content */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIzMCAzOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzkiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    /* gradient overlay */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
+    background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    /* gradient overlay */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    /* prevents bg color from leaking outside the border */
+    -webkit-box-shadow: inset 1px 2px 0 #80de41;
+    /* inner shadow */
+    -moz-box-shadow: inset 1px 2px 0 #80de41;
+    /* inner shadow */
+    box-shadow: inset 1px 2px 0 #80de41;
+    /* inner shadow */
+    -o-background-clip: padding-box;
+}
+
+
+/* 
+%default-btn-text {
+    color: #fff;
+    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+} */
+
 .tab-list__list,
 .tab-content__list {
     font-size: 0;
@@ -71,39 +107,13 @@
 
 .tab-list__list-item-link--active {
     color: #fff;
-    /* text color */
-    border: 1px solid #0b932f;
-    /* stroke */
+    /* drop shadow */
     -webkit-border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
-    /* border radius */
-    background-color: #fff;
-    /* layer fill content */
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIzMCAzOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzkiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
-    /* gradient overlay */
-    background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
-    /* gradient overlay */
-    background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
-    /* gradient overlay */
-    background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
-    /* gradient overlay */
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
-    background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
-    /* gradient overlay */
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    /* prevents bg color from leaking outside the border */
-    -webkit-box-shadow: inset 1px 2px 0 #80de41;
-    /* inner shadow */
-    -moz-box-shadow: inset 1px 2px 0 #80de41;
-    /* inner shadow */
-    box-shadow: inset 1px 2px 0 #80de41;
-    /* inner shadow */
+    /* text color */
     text-shadow: 0 -2px 0 rgba(0, 92, 19, .63);
-    /* drop shadow */
-    -o-background-clip: padding-box;
+    /* border radius */
 }
 
 .tab-content__list {

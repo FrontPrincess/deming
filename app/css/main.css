@@ -4,6 +4,13 @@
     content: '';
 }
 
+
+/* 
+%default-btn-text {
+    color: #fff;
+    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+} */
+
 .main-content {
     float: left;
     padding: 19px 18px 18px 16px;

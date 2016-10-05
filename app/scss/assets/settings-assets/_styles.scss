@@ -1,4 +1,7 @@
 %default-transition {
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 }
 
@@ -30,14 +33,26 @@
 }
 
 %translate-center-x {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 %translate-center-y {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 %translate-center-xy {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -75,3 +90,51 @@
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
 }
+
+%default-btn-bg {
+    border: 1px solid #0b932f;
+    /* stroke */
+    background-color: #43ab2d;
+    /* drop shadow and inner shadow */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE4OSAzNCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxODkiIGhlaWdodD0iMzQiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    /* gradient overlay */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
+    background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%);
+    /* border radius */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    /* layer fill content */
+    -webkit-box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+    -moz-box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+    box-shadow: 0 0 0 3px #d7d5cb, inset 1px 2px 0 #80de41;
+
+    -o-background-clip: padding-box;
+}
+
+%btn-bg-nonshadow {
+    border: 1px solid #0b932f; /* stroke */
+    background-color: #fff; /* layer fill content */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIzMCAzOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9Ijk1LjUlIiB4Mj0iNTAlIiB5Mj0iNC40OTk5OTk5OTk5OTk5OSUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGY5MzE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjVjMTNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzkiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(4.5%, #0f9319), color-stop(95.5%, #65c13d));
+    background-image: linear-gradient(bottom, #0f9319 4.5%, #65c13d 95.5%); /* gradient overlay */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    -webkit-box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+    -moz-box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+    box-shadow: inset 1px 2px 0 #80de41; /* inner shadow */
+    
+    -o-background-clip: padding-box;
+}
+/* 
+%default-btn-text {
+    color: #fff;
+    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+} */

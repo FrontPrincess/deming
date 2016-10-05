@@ -1,13 +1,26 @@
+/* 
+%default-btn-text {
+    color: #fff;
+    text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+} */
+
 .sidebar {
     float: right;
     padding: 18px 24px;
+}
+
+.search-block {
+    margin-bottom: 20px;
 }
 
 .search-block__description {
     margin-bottom: 20px;
 }
 
-.search-block__title {
+.search-block__title,
+.quick-search-block__title,
+.sign-up-block__title,
+.news-block__title {
     font-family: 'Myriad-ProRegular';
     font-size: 14px;
     font-weight: normal;
@@ -16,7 +29,9 @@
     color: #3f3b30;
 }
 
-.search-block__text {
+.search-block__text,
+.quick-search-block__text,
+.sign-up-block__text {
     font-family: Arial;
     font-size: 12px;
     margin-bottom: 15px;
@@ -65,5 +80,13 @@
 .search-block .jq-selectbox__select-text {
     font-family: Arial;
     font-size: 11px;
+}
+
+.quick-search-block {
+    margin-bottom: 30px;
+}
+
+.sign-up-block {
+    margin-bottom: 30px;
 }
 /*# sourceMappingURL=sourcemaps/sidebar.css.map */
