@@ -1,108 +1,130 @@
 @import 'assets/settings';
 
 .sidebar {
-	float: right;
-	padding: 18px 24px;
-	border-left: 1px solid #e1dbcd; /* stroke */
-	background-color: #f3f1eb; /* layer fill content */
+    float: right;
+    padding: 18px 24px;
+    border-left: 1px solid #e1dbcd; /* stroke */
+    background-color: #f3f1eb; /* layer fill content */
 }
 
 .search-block {
-	margin-bottom: 20px;
-	&__description {
-		margin-bottom: 16px;
-	}
-	&__title {
-		font-family: 'Myriad-ProRegular';
-		font-size: 14px;
-		color: color('tertiary');
-		text-transform: uppercase;
-		font-weight: normal;
-		margin-bottom: 0;
-	}
-	&__text {
-		font-family: Arial;
-		font-size: 12px;
-		color: color('tertiary');
-		margin-bottom: 15px;
-	} 
+    margin-bottom: 20px;
+    &__description {
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-family: 'Myriad-ProRegular';
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: color('tertiary');
+    }
+    &__text {
+        font-family: Arial;
+        font-size: 12px;
+        margin-bottom: 15px;
+        color: color('tertiary');
+    }
+    .jq-selectbox.jqselect {
+        width: 200px;
+        margin-bottom: 19px;
 
-	.jq-selectbox.jqselect {
-		margin-bottom: 16px;
-		width: 200px;
-		@extend %default-form-bg;
-		}
-
-		.jq-selectbox__select {
-			height: 23px;
-		}
-
-		.jq-selectbox__select-text {
-			font-family: Arial;
-			font-size: 11px;
-		}
-		
-} 
+        @extend %default-form-bg;
+    }
+    .jq-selectbox__select {
+        height: 23px;
+    }
+    .jq-selectbox__select-text {
+        font-family: Arial;
+        font-size: 11px;
+    }
+}
 
 
 .quick-search-block {
-	margin-bottom: 30px;
-	&__description {
-		margin-bottom: 16px;
-	}
-	&__title {
-		@extend .search-block__title;
-	}
-	&__text {
-		@extend .search-block__text;
-	}
+    margin-bottom: 30px;
+    &__description {
+        margin-bottom: 16px;
+    }
+    &__title {
+        @extend .search-block__title;
+    }
+    &__text {
+        @extend .search-block__text;
+    }
 }
 
 .sign-up-block {
-	margin-bottom: 30px;
-	&__description {
-		margin-bottom: 20px;
-	}
-	&__title {
-		@extend .search-block__title;
-	}
-	&__text {
-		@extend .search-block__text;
-	}
+    margin-bottom: 30px;
+    &__description {
+        margin-bottom: 20px;
+    }
+    &__title {
+        @extend .search-block__title;
+    }
+    &__text {
+        @extend .search-block__text;
+    }
 }
 
 .news-block {
-	&__title {
-		@extend .search-block__title;
-		margin-bottom: 20px;
-	}
-	&__list {
-		list-style: none;
-	}
+    &__title {
+        margin-bottom: 20px;
+
+        @extend .search-block__title;
+    }
+    &__list {
+        list-style: none;
+        &-item {
+            margin-bottom: 25px;
+            & h6 {
+                font-family: Arial;
+                font-size: 12px;
+                line-height: 18px;
+                margin-bottom: 0;
+            }
+            & p {
+                @extend h6;
+                & a {
+                    text-decoration: none;
+                    color: color('tertiary');
+                    &:hover {
+                    	text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .submit-button {
-	font-family: 'Klavika-MediumPlain';
-	font-size: 14px;
-	text-transform: uppercase;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
-	padding: 5.28px 7.78px;
-	@extend %default-btn-text;
-	@extend %default-btn-bg;
+    font-family: 'Klavika-MediumPlain';
+    font-size: 14px;
+    padding: 5.28px 7.78px;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    @extend %default-btn-text;
+    @extend %default-btn-bg;
+    &.arrow-button {
+    	padding: 9px 33px;
+    }
 }
 
 .input-field {
-	@extend %default-form-bg;
-	font-family: Arial;
-	font-size: 11px;
-	line-height: 20px;
-	margin-bottom: 10px;
-	width: 100%;
-	padding-left: 5px;
-	&.text {
-		width: 60%;
-		margin-right: 9px;
-	}
+    width: 100%;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+
+    @extend %default-form-bg;
+    &.text {
+        width: 60%;
+        margin-right: 9px;
+    }
 }

@@ -91,6 +91,12 @@
     -o-filter: grayscale(100%);
 }
 
+%default-list-center {
+    display: table;
+    width: 100%;
+    font-size: 0;
+}
+
 %default-btn-bg {
     border: 1px solid #0b932f;
     /* stroke */
@@ -114,6 +120,7 @@
 
     -o-background-clip: padding-box;
 }
+
 
 %btn-bg-nonshadow {
     border: 1px solid #0b932f; /* stroke */

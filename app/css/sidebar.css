@@ -100,7 +100,7 @@
 
 .search-block .jq-selectbox.jqselect {
     width: 200px;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
 }
 
 .search-block .jq-selectbox__select {
@@ -136,6 +136,27 @@
     list-style: none;
 }
 
+.news-block__list-item {
+    margin-bottom: 25px;
+}
+
+.news-block__list-item h6,
+.news-block__list-item p {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+
+.news-block__list-item p a {
+    text-decoration: none;
+    color: #3f3b30;
+}
+
+.news-block__list-item p a:hover {
+    text-decoration: underline;
+}
+
 .submit-button {
     font-family: 'Klavika-MediumPlain';
     font-size: 14px;
@@ -144,6 +165,10 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.submit-button.arrow-button {
+    padding: 9px 33px;
 }
 
 .input-field {

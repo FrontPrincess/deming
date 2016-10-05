@@ -5,6 +5,13 @@
     transition: all .15s ease-in;
 }
 
+.tab-list__list,
+.tab-content__list {
+    font-size: 0;
+    display: table;
+    width: 100%;
+}
+
 .tab-list__list-item-link--active {
     border: 1px solid #0b932f;
     /* stroke */
@@ -34,15 +41,37 @@
     -o-background-clip: padding-box;
 }
 
-.tab-list__list,
-.tab-content__list {
-    font-size: 0;
-    display: table;
-    width: 100%;
+.tab-list__list {
     border: 1px solid #cfcdc5;
+    /* stroke */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    /* border radius */
+    background-color: #fff;
+    /* layer fill content */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSI4Ni40NDQ0NDQ0NDQ0NDQ0JSIgeDI9IjUwJSIgeTI9IjUyLjQ0NDQ0NDQ0NDQ0NDQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, #f3f3f1 -5.89%, #fff 28.11%);
+    /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #f3f3f1 -5.89%, #fff 28.11%);
+    /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #f3f3f1 -5.89%, #fff 28.11%);
+    /* gradient overlay */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-5.89%, #f3f3f1), color-stop(28.11%, #fff));
+    background-image: linear-gradient(bottom, #f3f3f1 -5.89%, #fff 28.11%);
+    /* gradient overlay */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    /* prevents bg color from leaking outside the border */
+    -webkit-box-shadow: inset 0 -1px 0 #fff;
+    /* inner shadow */
+    -moz-box-shadow: inset 0 -1px 0 #fff;
+    /* inner shadow */
+    box-shadow: inset 0 -1px 0 #fff;
+    /* inner shadow */
+    -o-background-clip: padding-box;
 }
 
 .tab-list__list-item {
@@ -100,17 +129,16 @@
 
 .tab-list__list-item-link--active {
     color: #fff;
-    /* drop shadow */
+    /* text color */
     -webkit-border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
-    /* text color */
-    text-shadow: 0 -2px 0 rgba(0, 92, 19, .63);
     /* border radius */
+    text-shadow: 0 -2px 0 rgba(0, 92, 19, .63);
+    /* drop shadow */
 }
 
 .tab-content__list {
-    /* margin: 0 -10.5px; */
     border: none;
 }
 
