@@ -1,7 +1,159 @@
+@import 'assets/settings';
+
 /*footer*/
 
+.site-footer {
+	.my-container {
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; /* border radius */
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		-o-background-clip: padding-box;
+  		background-clip: padding-box; /* prevents bg color from leaking outside the border */
+		background-color: #f3f1eb; /* layer fill content */
 
+	}
+}
 
+.footer-title {
+	-webkit-border-radius: 5px 5px 0 0;
+	   -moz-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid #635543; /* stroke */
+    background-color: #878175; /* layer fill content */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjIyIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwLjIyIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* gradient overlay */
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.22) 0%, rgba(255,255,255,0.22) 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.22) 0%, rgba(255,255,255,0.22) 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.22) 0%, rgba(255,255,255,0.22) 100%); /* gradient overlay */
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.22)), to(rgba(255,255,255,0.22)));
+    background-image: linear-gradient(bottom, rgba(0,0,0,0.22) 0%, rgba(255,255,255,0.22) 100%); /* gradient overlay */
+
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.75); /* drop shadow */
+    text-align: center;
+    padding: 11.5px;
+}
+
+.footer-main {
+	a {
+		font-family: Arial;
+		font-size: 12px;
+		line-height: 18px;
+		color: #757268;
+	}
+
+	p {
+		font-family: Arial;
+		font-size: 12px;
+		line-height: 18px;
+		color: #757268;
+	}
+	span {
+		font-family: Arial;
+		font-size: 12px;
+		line-height: 18px;
+		color: #757268;
+	}
+}
+
+.footer-main {
+	@extend %clearfix;
+	/* @extend %default-list-center; */
+	&__socials {
+		display: inline-block;
+		width: 25%;
+		float: left;
+		padding-right: 20px;
+		& .twitter {
+			& .twitter-link {
+				font-family: 'Klavika-MediumPlain';
+				font-size: 14px;
+				line-height: 18px;
+				color: #64522a;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+		}
+		
+		& .facebook {
+			& .facebook-link {
+				font-family: 'Klavika-MediumPlain';
+				font-size: 14px;
+				line-height: 18px;
+				color: #64522a;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+		}
+	}
+	&__links {
+		@extend .footer-main__socials;
+		width: 50%;
+		&-title {
+				font-family: 'Klavika-MediumPlain';
+				font-size: 14px;
+				line-height: 18px;
+				color: #64522a;
+				text-transform: uppercase;
+				font-weight: normal;
+		}
+		&-tour {
+			display: inline-block;
+			width: 32%;
+			&-list {
+				vertical-align: top;
+				list-style: none;
+				display: inline-block;
+				
+			}
+		}
+
+		&-useful {
+			@extend .footer-main__links-tour;
+			&-list {
+				@extend .footer-main__links-tour-list;
+				
+			}
+		}
+		&-print {
+			@extend .footer-main__links-tour;
+			&-list {
+				@extend .footer-main__links-tour-list;
+			}
+		}
+	}
+
+	&__contacts {
+		width: 25%;
+		@extend .footer-main__socials;
+		&-title {
+			font-family: 'Klavika-MediumPlain';
+			font-size: 14px;
+			line-height: 18px;
+			color: #64522a;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+		&-contacts {
+			& a {
+				& span {
+					font-weight: bold;
+				}
+			}
+		}
+		&-city {
+			display: block;
+		}
+		&-adress {
+			display: block;
+		}
+	}
+}
 
 
 /*END:footer*/
