@@ -2,9 +2,8 @@
 
 /*footer*/
 
-.site-footer {
-	.my-container {
-		-moz-border-radius: 5px;
+.footer-block {
+	-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 		border-radius: 5px; /* border radius */
 		-moz-background-clip: padding;
@@ -12,8 +11,6 @@
 		-o-background-clip: padding-box;
   		background-clip: padding-box; /* prevents bg color from leaking outside the border */
 		background-color: #f3f1eb; /* layer fill content */
-
-	}
 }
 
 .footer-title {
@@ -155,5 +152,23 @@
 	}
 }
 
+.footer-copyright {
+	text-align: center;
+	padding: 16px;
+	&__name {
+		font-family: Arial;
+		font-size: 11px;
+		line-height: 18px;
+		color: color('secondary');
+		margin-bottom: 10px;
+	}
+	&__description {
+		&-text {
+			@extend .footer-copyright__name;
+			color: #716c61;
+		}
+	}
 
+
+}
 /*END:footer*/
