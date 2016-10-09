@@ -5,10 +5,12 @@
 }
 
 .main-block {
-    margin-bottom: 30px;
+    display: table-row;
+    height: 100%;
 }
 
 .main-home .my-container {
+    margin-bottom: 30px;
     border: 1px solid #e1dbcd;
     -webkit-border-radius: 5px;
     /* stroke */

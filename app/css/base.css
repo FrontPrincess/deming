@@ -42,6 +42,11 @@
 
 /*header*/
 
+.site-header {
+    display: table-row;
+    height: 1px;
+}
+
 .site-header .header-main {
     margin-top: 15px;
     margin-bottom: 12px;
@@ -201,6 +206,11 @@
 
 
 /*footer*/
+
+.site-footer {
+    display: table-footer-group;
+    height: 1px;
+}
 
 .footer-block {
     -webkit-border-radius: 5px;
@@ -391,6 +401,13 @@ body {
 
 html {
     height: 100%;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
 }
 
 a,
