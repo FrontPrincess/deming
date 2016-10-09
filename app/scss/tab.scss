@@ -113,12 +113,19 @@
             padding: 0 4px;
             padding-left: 4px;
             color: color('secondary');
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         &-description {
+            max-height: 100px;
+            overflow: hidden;
             p {
                 font-size: 12px;
                 line-height: 18px;
-
+                overflow: visible;
+                white-space: normal;
+                text-overflow: inherit;
                 @extend .tab-content__list-item-title;
             }
         }
