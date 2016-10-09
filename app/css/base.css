@@ -43,14 +43,14 @@
 /*header*/
 
 .site-header .header-main {
-    margin-top: 17px;
-    margin-bottom: 13px;
+    margin-top: 15px;
+    margin-bottom: 12px;
 }
 
 .site-header .header-main__logo {
     font-family: 'Klavika-MediumPlain';
     float: left;
-    padding-top: 16px;
+    padding-top: 17px;
     padding-bottom: 10px;
     padding-left: 52px;
     background-image: url(../img/base/main-logo.png);
@@ -74,7 +74,7 @@
 }
 
 .site-header .header-main__logo-subtitle a {
-    padding-left: 3px;
+    padding-left: 4px;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #858689;
@@ -87,13 +87,13 @@
 
 .site-header .header-main__info-contact {
     font-family: 'Myriad-ProRegular';
-    margin-bottom: 6px;
-    /* padding-right: 1px; */
+    margin-bottom: 6.3px;
+    padding-right: 1px;
 }
 
 .site-header .header-main__info-contact p {
     font-size: 12px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     color: #585755;
 }
 
@@ -147,7 +147,7 @@
     /* text color */
     font-family: 'Zurich-BoldCondensedBT';
     font-size: 15px;
-    padding: 12.71px 27px;
+    padding: 12.71px 29px;
     color: #fff;
     text-shadow: 0 -2px 0 rgba(0, 92, 19, .63);
 }

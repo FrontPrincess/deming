@@ -34,11 +34,34 @@
     }
     .jq-selectbox__select {
         height: 23px;
+        line-height: 23px;
     }
     .jq-selectbox__select-text {
         font-family: Arial;
         font-size: 11px;
     }
+    .jq-selectbox__trigger {
+        width: 20px;
+        height: 18px;
+        top: 1.5px;
+        right: 3px;
+        /* border: 1px solid black; */
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; /* border radius */
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        -o-background-clip: padding-box;
+           background-clip: padding-box; /* prevents bg color from leaking outside the border */
+        background-color: #615b49; /* layer fill content */
+
+        .jq-selectbox__trigger-arrow {
+                top: 50%;
+                right: 5px;
+                border-top: 5px solid #fff;
+        }
+    }
+
 }
 
 
@@ -53,6 +76,7 @@
     &__text {
         @extend .search-block__text;
     }
+    
 }
 
 .sign-up-block {
@@ -90,7 +114,7 @@
                     text-decoration: none;
                     color: color('tertiary');
                     &:hover {
-                    	text-decoration: underline;
+                        text-decoration: underline;
                     }
                 }
             }
@@ -110,7 +134,7 @@
     @extend %default-btn-text;
     @extend %default-btn-bg;
     &.arrow-button {
-    	padding: 9px 33px;
+        padding: 9px 33px;
     }
 }
 

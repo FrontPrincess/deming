@@ -1,36 +1,36 @@
 /*header*/
 .site-header {
     .header-main {
-        margin-top: 17px;
-        margin-bottom: 13px;
+        margin-top: 15px;
+        margin-bottom: 12px;
 
         @extend %clearfix;
         &__logo {
             float: left;
             font-family: 'Klavika-MediumPlain';
-            padding-top: 16px;
+            padding-top: 17px;
             padding-bottom: 10px;
             padding-left: 52px;
             background-image: url(../img/base/main-logo.png);
             background-repeat: no-repeat;
             background-position: 24px 4px;
-        }
-        &__logo-title {
-            font-size: 34px;
-            margin-bottom: 2px;
-            a {
-                text-transform: uppercase;
-                color: #231f20;
+            &-title {
+                font-size: 34px;
+                margin-bottom: 2px;
+                a {
+                    text-transform: uppercase;
+                    color: #231f20;
+                }
             }
-        }
-        &__logo-subtitle {
-            font-size: 11px;
-            margin-bottom: 5px;
-            a {
-                padding-left: 3px;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-                color: #858689;
+            &-subtitle {
+                font-size: 11px;
+                margin-bottom: 5px;
+                a {
+                    padding-left: 4px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #858689;
+                }
             }
         }
         &__info {
@@ -38,11 +38,11 @@
             text-align: right;
             &-contact {
                 font-family: 'Myriad-ProRegular';
-                margin-bottom: 6px;
-                /* padding-right: 1px; */
+                margin-bottom: 6.3px;
+                padding-right: 1px;
                 p {
                     font-size: 12px;
-                    margin-bottom: 4px;
+                    margin-bottom: 5px;
                     color: #585755;
                 }
                 a {
@@ -97,7 +97,7 @@
                         /* text color */
                         font-family: 'Zurich-BoldCondensedBT';
                         font-size: 15px;
-                        padding: 12.71px 27px;
+                        padding: 12.71px 29px;
                         color: #fff;
                         text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
 
