@@ -10,6 +10,7 @@
     font-size: 0;
     display: table;
     width: 100%;
+    table-layout: fixed;
 }
 
 .tab-list__list-item-link--active {
@@ -168,14 +169,27 @@
     font-family: Arial;
     font-size: 14px;
     line-height: 20px;
+    overflow: hidden;
     margin-bottom: 12px;
     padding: 0 4px;
     padding-left: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: #3a3731;
+    -o-text-overflow: ellipsis;
+}
+
+.tab-content__list-item-description {
+    overflow: hidden;
+    max-height: 100px;
 }
 
 .tab-content__list-item-description p {
     font-size: 12px;
     line-height: 18px;
+    overflow: visible;
+    white-space: normal;
+    text-overflow: inherit;
+    -o-text-overflow: inherit;
 }
 /*# sourceMappingURL=sourcemaps/tab.css.map */
