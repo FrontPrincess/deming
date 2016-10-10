@@ -62,7 +62,7 @@
 
 .sidebar {
     float: right;
-    padding: 23px 22px 18px 22px;
+    padding: 18px 24px;
     border-left: 1px solid #e1dbcd;
     /* stroke */
     background-color: #f3f1eb;
@@ -70,11 +70,11 @@
 }
 
 .search-block {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .search-block__description {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .search-block__title,
@@ -100,13 +100,11 @@
 
 .search-block .jq-selectbox.jqselect {
     width: 200px;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 
 .search-block .jq-selectbox__select {
-    line-height: 23px;
     height: 23px;
-    padding-left: 7px;
 }
 
 .search-block .jq-selectbox__select-text {
@@ -114,53 +112,24 @@
     font-size: 11px;
 }
 
-.search-block .jq-selectbox__trigger {
-    top: 1.5px;
-    right: 3px;
-    width: 20px;
-    height: 18px;
-    -webkit-border-radius: 3px;
-    /* border: 1px solid black; */
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    /* prevents bg color from leaking outside the border */
-    background-color: #615b49;
-    -webkit-background-clip: padding-box;
-    /* border radius */
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    -o-background-clip: padding-box;
-    /* layer fill content */
-}
-
-.search-block .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
-    top: 50%;
-    right: 5px;
-    border-top: 5px solid #fff;
-}
-
 .quick-search-block {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 }
 
 .quick-search-block__description {
-    margin-bottom: 13px;
+    margin-bottom: 16px;
 }
 
 .sign-up-block {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .sign-up-block__description {
-    margin-bottom: 17px;
-}
-
-.sign-up-block .input-field {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
 }
 
 .news-block__title {
-    margin-bottom: 7.1px;
+    margin-bottom: 20px;
 }
 
 .news-block__list {
@@ -168,7 +137,7 @@
 }
 
 .news-block__list-item {
-    margin-bottom: 19px;
+    margin-bottom: 25px;
 }
 
 .news-block__list-item h6,
@@ -180,7 +149,6 @@
 }
 
 .news-block__list-item p a {
-    line-height: 19px;
     text-decoration: none;
     color: #3f3b30;
 }
@@ -208,12 +176,12 @@
     font-size: 11px;
     line-height: 20px;
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     padding-left: 5px;
 }
 
 .input-field.text {
     width: 60%;
-    margin-right: 5px;
+    margin-right: 9px;
 }
 /*# sourceMappingURL=sourcemaps/sidebar.css.map */

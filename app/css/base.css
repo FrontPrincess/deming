@@ -448,13 +448,6 @@ html {
     height: 100%;
 }
 
-.wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    table-layout: fixed;
-}
-
 a,
 .site-header .header-nav__nav-list-item a {
     text-decoration: none;
