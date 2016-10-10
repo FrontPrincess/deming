@@ -5,10 +5,12 @@
 }
 
 .main-block {
-    margin-bottom: 30px;
+    display: table-row;
+    height: 100%;
 }
 
 .main-home .my-container {
+    margin-bottom: 20px;
     border: 1px solid #e1dbcd;
     -webkit-border-radius: 5px;
     /* stroke */
@@ -32,7 +34,7 @@
 
 .main-content {
     float: left;
-    padding: 19px 18px 18px 16px;
+    padding: 19px 19px 4px 14px;
     background-color: #fff;
 }
 
@@ -42,7 +44,7 @@
 
 .main-content .home-slider .slider-list .slick-dots {
     position: absolute;
-    right: 60px;
+    right: 93px;
     bottom: 0;
     margin-bottom: 16px;
     list-style: none;
@@ -50,7 +52,7 @@
 
 .main-content .home-slider .slider-list .slick-dots li {
     display: inline-block;
-    padding: 10px;
+    padding: 7px 4.7px;
 }
 
 .main-content .home-slider .slider-list .slick-dots li button {
@@ -127,7 +129,7 @@
     right: 0;
     width: 236px;
     height: 100%;
-    padding: 17px;
+    padding: 15px 17px;
     opacity: .8;
     -webkit-border-radius: 0 12px 12px 0;
     -moz-border-radius: 0 12px 12px 0;
@@ -139,12 +141,20 @@
     font-family: 'Zurich-CondensedBT';
     font-size: 22px;
     font-weight: normal;
+    /* padding-bottom: 2px; */
+    line-height: 35px;
+    margin-bottom: 9px;
     color: #fff;
 }
 
 .main-content .home-slider .slider-list-item__description h3 span {
     font-size: 32px;
+    line-height: 27px;
     color: #28b028;
+}
+
+.main-content .home-slider .slider-list-item__text {
+    padding-left: 1px;
 }
 
 .main-content .home-slider .slider-list-item__text p {
@@ -152,7 +162,6 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 0;
-    margin-bottom: 13px;
     color: #fff;
 }
 
@@ -165,6 +174,7 @@
 
 .main-content__description {
     position: relative;
+    padding-top: 7px;
 }
 
 .main-content__description-text {
@@ -177,6 +187,7 @@
     font-family: 'Zurich-CondensedBT';
     font-size: 26px;
     font-weight: normal;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #444137;
 }
@@ -185,7 +196,8 @@
     font-family: Arial;
     font-size: 12px;
     line-height: 20px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    padding-left: 1px;
     color: #595447;
 }
 

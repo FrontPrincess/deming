@@ -114,7 +114,7 @@
 
 .tab-list__list-item-link .triangle--active {
     position: absolute;
-    right: 104px;
+    right: 111px;
     bottom: -5px;
     width: 0;
     height: 0;
@@ -140,13 +140,15 @@
 }
 
 .tab-content__list {
+    margin-bottom: 5px;
     border: none;
 }
 
 .tab-content__list-item {
     display: inline-block;
     width: 31.20567375886525%;
-    margin-right: 21px;
+    margin-right: 22px;
+    margin-bottom: 17px;
     /* padding: 0 10.5px; */
     vertical-align: top;
 }
@@ -157,7 +159,7 @@
 
 .tab-content__list-item-img {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     border: 4px solid #e9e6df;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -169,14 +171,28 @@
     font-family: Arial;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 12px;
+    overflow: hidden;
+    margin-bottom: 4.8px;
     padding: 0 4px;
     padding-left: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: #3a3731;
+    -o-text-overflow: ellipsis;
+}
+
+.tab-content__list-item-description {
+    overflow: hidden;
+    max-height: 100px;
 }
 
 .tab-content__list-item-description p {
     font-size: 12px;
     line-height: 18px;
+    overflow: visible;
+    padding-left: 3px;
+    white-space: normal;
+    text-overflow: inherit;
+    -o-text-overflow: inherit;
 }
 /*# sourceMappingURL=sourcemaps/tab.css.map */
