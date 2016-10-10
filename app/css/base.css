@@ -216,32 +216,30 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    /* prevents bg color from leaking outside the border */
-    background-color: #f3f1eb;
-    -webkit-background-clip: padding-box;
     /* border radius */
+    background-color: #f3f1eb;
+    /* layer fill content */
+    -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
+    /* prevents bg color from leaking outside the border */
     -o-background-clip: padding-box;
-    /* layer fill content */
 }
 
 .footer-title {
-    /* gradient overlay */
     font-family: Arial;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
     line-height: 18px;
     padding: 11.5px;
-    /* drop shadow */
     text-align: center;
     color: #fff;
     border-bottom: 2px solid #635543;
+    /* stroke */
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
-    /* stroke */
     background-color: #878175;
     /* layer fill content */
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjIyIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwLjIyIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
@@ -254,7 +252,9 @@
     /* gradient overlay */
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .22)), to(rgba(255, 255, 255, .22)));
     background-image: linear-gradient(bottom, rgba(0, 0, 0, .22) 0%, rgba(255, 255, 255, .22) 100%);
+    /* gradient overlay */
     text-shadow: 0 1px 0 rgba(0, 0, 0, .75);
+    /* drop shadow */
 }
 
 .footer-main a,
@@ -288,11 +288,40 @@
 .footer-main__socials,
 .footer-main__links,
 .footer-main__contacts {
+    position: relative;
     display: inline-block;
     float: left;
     width: 24%;
     padding-right: 20px;
     padding-left: 22px;
+}
+
+.footer-main__socials:before,
+.footer-main__links:before,
+.footer-main__contacts:before,
+.footer-main__socials:after,
+.footer-main__links:after,
+.footer-main__contacts:after {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 80%;
+    content: '';
+}
+
+.footer-main__socials:before,
+.footer-main__links:before,
+.footer-main__contacts:before {
+    right: 1px;
+    background-color: #d8d6ce;
+}
+
+.footer-main__socials:after,
+.footer-main__links:after,
+.footer-main__contacts:after {
+    right: 0;
+    background-color: #faf8f6;
 }
 
 .footer-main__socials .twitter,
@@ -380,6 +409,11 @@
 
 .footer-main__contacts {
     width: 23%;
+}
+
+.footer-main__contacts:before,
+.footer-main__contacts:after {
+    display: none;
 }
 
 .footer-main__contacts-title {
