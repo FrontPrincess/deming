@@ -230,6 +230,7 @@
     /* gradient overlay */
     font-family: Arial;
     font-size: 16px;
+    font-weight: normal;
     font-style: italic;
     line-height: 18px;
     padding: 11.5px;
@@ -262,6 +263,7 @@
     font-family: Arial;
     font-size: 12px;
     line-height: 18px;
+    display: inline-block;
     color: #757268;
 }
 
@@ -288,8 +290,16 @@
 .footer-main__contacts {
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 24%;
     padding-right: 20px;
+    padding-left: 22px;
+}
+
+.footer-main__socials .twitter,
+.footer-main__links .twitter,
+.footer-main__contacts .twitter {
+    margin-bottom: 6px;
+    padding-left: 4px;
 }
 
 .footer-main__socials .twitter .twitter-link,
@@ -315,7 +325,7 @@
 }
 
 .footer-main__links {
-    width: 50%;
+    width: 53%;
 }
 
 .footer-main__links-title {
@@ -323,6 +333,8 @@
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
+    margin-bottom: 3px;
+    padding-left: 14px;
     text-transform: uppercase;
     color: #64522a;
 }
@@ -331,7 +343,9 @@
 .footer-main__links-useful,
 .footer-main__links-print {
     display: inline-block;
-    width: 32%;
+    width: 29%;
+    margin-right: 25px;
+    padding-left: 14px;
 }
 
 .footer-main__links-tour-list,
@@ -342,8 +356,30 @@
     vertical-align: top;
 }
 
+.footer-main__links-tour-item a,
+.footer-main__links-tour-item .site-header .header-nav__nav-list-item a,
+.site-header .header-nav__nav-list-item .footer-main__links-tour-item a {
+    line-height: 14px;
+}
+
+.footer-main__links-useful-item a,
+.footer-main__links-useful-item .site-header .header-nav__nav-list-item a,
+.site-header .header-nav__nav-list-item .footer-main__links-useful-item a {
+    line-height: 14px;
+}
+
+.footer-main__links-print {
+    margin-right: 0;
+}
+
+.footer-main__links-print-item a,
+.footer-main__links-print-item .site-header .header-nav__nav-list-item a,
+.site-header .header-nav__nav-list-item .footer-main__links-print-item a {
+    line-height: 14px;
+}
+
 .footer-main__contacts {
-    width: 25%;
+    width: 23%;
 }
 
 .footer-main__contacts-title {
@@ -351,8 +387,13 @@
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
+    margin-bottom: 2px;
     text-transform: uppercase;
     color: #64522a;
+}
+
+.footer-main__contacts-contacts {
+    margin-bottom: 24px;
 }
 
 .footer-main__contacts-contacts a span,
@@ -369,8 +410,12 @@
     display: block;
 }
 
+.footer-main__contacts-adress span {
+    line-height: 14px;
+}
+
 .footer-copyright {
-    padding: 16px;
+    padding: 19px 19px 73px 19px;
     text-align: center;
 }
 
@@ -379,7 +424,7 @@
     font-family: Arial;
     font-size: 11px;
     line-height: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: #3a3731;
 }
 

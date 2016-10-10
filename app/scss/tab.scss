@@ -86,20 +86,22 @@
 
 .tab-content__list {
     border: none;
+    margin-bottom: 5px;
     @extend %default-list-center;
     
     &-item {
         display: inline-block;
         width: 31.20567375886525%;
-        margin-right: 21px;
+        margin-right: 22px;
         /* padding: 0 10.5px; */
         vertical-align: top;
+        margin-bottom: 17px;
         &:nth-child(3n) {
             margin-right: 0;
         }
         &-img {
             width: 100%;
-            margin-bottom: 12px;
+            margin-bottom: 9px;
             border: 4px solid #e9e6df;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -109,7 +111,7 @@
             font-family: Arial;
             font-size: 14px;
             line-height: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 4.8px;
             padding: 0 4px;
             padding-left: 4px;
             color: color('secondary');
@@ -128,6 +130,7 @@
                 white-space: normal;
                 -o-text-overflow: inherit;
                    text-overflow: inherit;
+                   padding-left: 3px;
 
                 @extend .tab-content__list-item-title;
             }

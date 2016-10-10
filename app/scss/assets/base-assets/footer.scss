@@ -39,6 +39,7 @@
     text-shadow: 0 1px 0 rgba(0,0,0,.75); /* drop shadow */
     text-align: center;
     padding: 11.5px;
+    font-weight: normal;
 }
 
 .footer-main {
@@ -47,6 +48,7 @@
 		font-size: 12px;
 		line-height: 18px;
 		color: #757268;
+		display: inline-block;
 	}
 
 	p {
@@ -68,10 +70,13 @@
 	/* @extend %default-list-center; */
 	&__socials {
 		display: inline-block;
-		width: 25%;
+		width: 24%;
 		float: left;
 		padding-right: 20px;
+		padding-left: 22px;
 		& .twitter {
+			margin-bottom: 6px;
+			padding-left: 4px;
 			& .twitter-link {
 				font-family: 'Klavika-MediumPlain';
 				font-size: 14px;
@@ -95,7 +100,7 @@
 	}
 	&__links {
 		@extend .footer-main__socials;
-		width: 50%;
+		width: 53%;
 		&-title {
 				font-family: 'Klavika-MediumPlain';
 				font-size: 14px;
@@ -103,16 +108,26 @@
 				color: #64522a;
 				text-transform: uppercase;
 				font-weight: normal;
+				margin-bottom: 3px;
+				padding-left: 14px;
 		}
 		&-tour {
 			display: inline-block;
-			width: 32%;
+			width: 29%;
+			padding-left:14px;
+			margin-right: 25px;
+
 			&-list {
 				vertical-align: top;
 				list-style: none;
 				display: inline-block;
 				
 			}
+			&-item {
+					& a {
+						line-height: 14px;
+					}
+				}
 		}
 
 		&-useful {
@@ -121,17 +136,28 @@
 				@extend .footer-main__links-tour-list;
 				
 			}
+			&-item {
+					& a {
+						line-height: 14px;
+					}
+				}
 		}
 		&-print {
 			@extend .footer-main__links-tour;
+			margin-right: 0;
 			&-list {
 				@extend .footer-main__links-tour-list;
 			}
+			&-item {
+					& a {
+						line-height: 14px;
+					}
+				}
 		}
 	}
 
 	&__contacts {
-		width: 25%;
+		width: 23%;
 		@extend .footer-main__socials;
 		&-title {
 			font-family: 'Klavika-MediumPlain';
@@ -140,10 +166,14 @@
 			color: #64522a;
 			text-transform: uppercase;
 			font-weight: normal;
+			margin-bottom: 2px;
 		}
 		&-contacts {
+			margin-bottom: 24px;
 			& a {
+				
 				& span {
+
 					font-weight: bold;
 				}
 			}
@@ -153,19 +183,22 @@
 		}
 		&-adress {
 			display: block;
+			& span {
+				line-height: 14px;
+			}
 		}
 	}
 }
 
 .footer-copyright {
 	text-align: center;
-	padding: 16px;
+	padding: 19px 19px 73px 19px;
 	&__name {
 		font-family: Arial;
 		font-size: 11px;
 		line-height: 18px;
 		color: color('secondary');
-		margin-bottom: 10px;
+		margin-bottom: 1px;
 	}
 	&__description {
 		&-text {

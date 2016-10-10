@@ -10,7 +10,7 @@
 }
 
 .main-home .my-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: 1px solid #e1dbcd;
     -webkit-border-radius: 5px;
     /* stroke */
@@ -34,7 +34,7 @@
 
 .main-content {
     float: left;
-    padding: 19px 19px 18px 14px;
+    padding: 19px 19px 4px 14px;
     background-color: #fff;
 }
 

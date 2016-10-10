@@ -2,15 +2,15 @@
 
 .sidebar {
     float: right;
-    padding: 18px 24px;
+    padding: 23px 22px 18px 22px;
     border-left: 1px solid #e1dbcd; /* stroke */
     background-color: #f3f1eb; /* layer fill content */
 }
 
 .search-block {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     &__description {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
     &__title {
         font-family: 'Myriad-ProRegular';
@@ -28,13 +28,14 @@
     }
     .jq-selectbox.jqselect {
         width: 200px;
-        margin-bottom: 19px;
+        margin-bottom: 18px;
 
         @extend %default-form-bg;
     }
     .jq-selectbox__select {
         height: 23px;
         line-height: 23px;
+        padding-left: 7px;
     }
     .jq-selectbox__select-text {
         font-family: Arial;
@@ -66,9 +67,9 @@
 
 
 .quick-search-block {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     &__description {
-        margin-bottom: 16px;
+        margin-bottom: 13px;
     }
     &__title {
         @extend .search-block__title;
@@ -80,9 +81,9 @@
 }
 
 .sign-up-block {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     &__description {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     &__title {
         @extend .search-block__title;
@@ -90,18 +91,21 @@
     &__text {
         @extend .search-block__text;
     }
+    .input-field {
+        margin-bottom: 13px;
+    }
 }
 
 .news-block {
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 7.1px;
 
         @extend .search-block__title;
     }
     &__list {
         list-style: none;
         &-item {
-            margin-bottom: 25px;
+            margin-bottom: 19px;
             & h6 {
                 font-family: Arial;
                 font-size: 12px;
@@ -113,6 +117,7 @@
                 & a {
                     text-decoration: none;
                     color: color('tertiary');
+                    line-height: 19px;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -143,12 +148,12 @@
     font-family: Arial;
     font-size: 11px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     padding-left: 5px;
 
     @extend %default-form-bg;
     &.text {
         width: 60%;
-        margin-right: 9px;
+        margin-right: 5px;
     }
 }
