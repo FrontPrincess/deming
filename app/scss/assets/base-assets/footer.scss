@@ -90,10 +90,10 @@
             right: 0;
         	background-color: #FAF8F6;
         }
-        & .twitter {
+        .twitter {
             margin-bottom: 6px;
             padding-left: 4px;
-            & .twitter-link {
+            &-link {
                 font-family: 'Klavika-MediumPlain';
                 font-size: 14px;
                 font-weight: normal;
@@ -101,15 +101,16 @@
                 text-transform: uppercase;
                 color: #64522a;
             }
+            &__btn{
+            	@include sprite($twitter);
+            	border: none;
+            	background: none;
+            	background-position: -1256px -76px;
+            }
         }
         & .facebook {
             & .facebook-link {
-                font-family: 'Klavika-MediumPlain';
-                font-size: 14px;
-                font-weight: normal;
-                line-height: 18px;
-                text-transform: uppercase;
-                color: #64522a;
+                @include sprite($facebook);
             }
         }
     }

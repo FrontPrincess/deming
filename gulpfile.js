@@ -13,6 +13,7 @@ var browserSync = require('browser-sync');
 var bsReload = browserSync.reload;
 var useref = require('gulp-useref');
 var sftp = require('gulp-sftp');
+var spritesmith = require('gulp.spritesmith');
 
 
 // ======== APP ==========================================================================================================
@@ -54,6 +55,20 @@ gulp.task('js:app', function() {
         .pipe(bsReload({ stream: true }));
 });
 // =========== END:js:app ================
+
+// =========== sprite-png:app ================
+gulp.task('sprite-png:app', function(){
+    var spriteData = 
+    gulp.src('./app/img/sprite-png/**/*.png') 
+      .pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: '_sprite-png.scss',
+        imgPath: '../img/sprite.png'
+      }));
+    spriteData.img.pipe(gulp.dest('./app/img/')); 
+    spriteData.css.pipe(gulp.dest('./app/scss/assets/')); 
+});
+// =========== END:sprite-png:app ================
 
 
 // ======== END:APP ==========================================================================================================
