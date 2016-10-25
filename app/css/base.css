@@ -456,9 +456,9 @@ The `sprites` mixin generates identical output to the CSS template
     background-position: -1256px -76px;
 }
 
-.footer-main__socials .facebook .facebook-link,
-.footer-main__links .facebook .facebook-link,
-.footer-main__contacts .facebook .facebook-link {
+.footer-main__socials .facebook-link,
+.footer-main__links .facebook-link,
+.footer-main__contacts .facebook-link {
     width: 195px;
     height: 33px;
     background-image: url(../img/sprite.png);

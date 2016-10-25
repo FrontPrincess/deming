@@ -108,8 +108,8 @@
             	background-position: -1256px -76px;
             }
         }
-        & .facebook {
-            & .facebook-link {
+        .facebook {
+            &-link {
                 @include sprite($facebook);
             }
         }
