@@ -113,7 +113,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .sidebar {
     float: right;
-    padding: 23px 22px 18px 22px;
+    padding: 23px 22px 14px 22px;
     border-left: 1px solid #e1dbcd;
     /* stroke */
     background-color: #f3f1eb;
@@ -219,7 +219,7 @@ The `sprites` mixin generates identical output to the CSS template
 }
 
 .news-block__list-item {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
 }
 
 .news-block__list-item h6,

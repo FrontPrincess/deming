@@ -84,7 +84,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .main-content {
     float: left;
-    padding: 19px 19px 4px 14px;
+    padding: 19px 19px 2px 14px;
     background-color: #fff;
 }
 

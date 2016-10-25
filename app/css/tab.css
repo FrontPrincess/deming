@@ -198,8 +198,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: inline-block;
     width: 31.20567375886525%;
     margin-right: 22px;
-    margin-bottom: 17px;
-    /* padding: 0 10.5px; */
+    margin-bottom: 14px;
     vertical-align: top;
 }
 

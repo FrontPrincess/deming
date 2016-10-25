@@ -20,6 +20,7 @@
 }
 
 .footer-title {
+    margin-bottom: 15px;
     font-family: Arial;
     font-size: 16px;
     font-weight: normal;
@@ -83,12 +84,12 @@
             content: '';
         }
         &:before{
-        	right: 1px;
+            right: 1px;
             background-color: #d8d6ce;
         }
         &:after{
             right: 0;
-        	background-color: #FAF8F6;
+            background-color: #FAF8F6;
         }
         .twitter {
             margin-bottom: 6px;
@@ -102,10 +103,15 @@
                 color: #64522a;
             }
             &__btn{
-            	@include sprite($twitter);
-            	border: none;
-            	background: none;
-            	background-position: -1256px -76px;
+                @include sprite($twitter);
+                border: none;
+                background: none;
+                background-position: -1256px -76px;
+            }
+        }
+        &-text {
+            p {
+                margin-bottom: 10px;
             }
         }
         .facebook {
@@ -127,11 +133,12 @@
             padding-left: 14px;
             text-transform: uppercase;
             color: #64522a;
+            padding-top: 4px;
         }
         &-tour {
             display: inline-block;
-            width: 29%;
-            margin-right: 25px;
+            width: 30%;
+            margin-right: 14px;
             padding-left: 14px;
             &-list {
                 display: inline-block;
@@ -171,10 +178,10 @@
     }
     &__contacts {
         width: 23%;
-
+        padding-left: 24px;
         @extend .footer-main__socials;
         &:before, &:after{
-        	display: none;
+            display: none;
         }
         &-title {
             font-family: 'Klavika-MediumPlain';
@@ -184,6 +191,7 @@
             margin-bottom: 2px;
             text-transform: uppercase;
             color: #64522a;
+            padding-top: 4px;
         }
         &-contacts {
             margin-bottom: 24px;
@@ -206,7 +214,7 @@
 }
 
 .footer-copyright {
-    padding: 19px 19px 73px 19px;
+    padding: 14px 19px 73px 19px;
     text-align: center;
     &__name {
         font-family: Arial;
