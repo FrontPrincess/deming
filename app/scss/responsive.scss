@@ -1,0 +1,72 @@
+@media screen and (max-width: 960px) {
+    .site-header {
+        .header-nav {
+            .header-toggle {
+                display: inline-block;
+                margin-left: 100px;
+            }
+            &__nav {
+            	display: none;
+                position: absolute;
+                top: 150px;
+                left: 100px;
+                z-index: 1000;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+                
+                &-list {
+                    &-item {
+                        display: block;
+                        a {
+                        	display: block;
+                        }
+                    }
+                }
+                &.active {
+                	display: block;
+                    
+                }
+            }
+        }
+    }
+
+    .main-home {
+        .my-container {
+            border: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+
+    .main-content {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        float: none;
+        width: 738px;
+        margin: 0 auto;
+        &:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+    }
+
+    .quick-search-block,
+    .sign-up-block {
+        display: none;
+    }
+    .search-block {
+        float: left;
+        width: 50%;
+    }
+    .news-block {
+        float: right;
+        width: 50%;
+    }
+}

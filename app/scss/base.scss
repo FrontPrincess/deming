@@ -4,14 +4,6 @@
 @import 'assets/base-assets/header';
 @import 'assets/base-assets/footer';
 
-body {
-	background-image: url(../img/base/index-block.png);
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-	        background-repeat: no-repeat;
-}
 html {
     height: 100%;
 }
@@ -21,6 +13,12 @@ html {
 	width: 100%;
 	height: 100%;
 	table-layout: fixed;
+	background-image: url(../img/base/index-block.png);
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	        background-repeat: no-repeat;
 }
 
 a {
