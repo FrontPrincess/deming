@@ -135,7 +135,23 @@
             color: #64522a;
             padding-top: 4px;
         }
-        &-tour {
+        &-list {
+            font-size: 0;
+            display: table;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &-item {
+            display: inline-block;
+            width: 33%;
+            padding: 5px 14px;
+            vertical-align: top;
+            line-height: 14px;
+            &-list {
+                margin-bottom: 0;
+            }
+        }
+        /* &-tour {
             display: inline-block;
             width: 30%;
             margin-right: 14px;
@@ -164,7 +180,7 @@
         }
         &-print {
             margin-right: 0;
-
+        
             @extend .footer-main__links-tour;
             &-list {
                 @extend .footer-main__links-tour-list;
@@ -174,7 +190,7 @@
                     line-height: 14px;
                 }
             }
-        }
+        } */
     }
     &__contacts {
         width: 23%;

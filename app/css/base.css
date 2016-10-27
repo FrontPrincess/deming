@@ -497,6 +497,46 @@ The `sprites` mixin generates identical output to the CSS template
 
 .footer-main__links {
     width: 53%;
+    /* &-tour {
+            display: inline-block;
+            width: 30%;
+            margin-right: 14px;
+            padding-left: 14px;
+            &-list {
+                display: inline-block;
+                list-style: none;
+                vertical-align: top;
+            }
+            &-item {
+                & a {
+                    line-height: 14px;
+                }
+            }
+        }
+        &-useful {
+            @extend .footer-main__links-tour;
+            &-list {
+                @extend .footer-main__links-tour-list;
+            }
+            &-item {
+                & a {
+                    line-height: 14px;
+                }
+            }
+        }
+        &-print {
+            margin-right: 0;
+        
+            @extend .footer-main__links-tour;
+            &-list {
+                @extend .footer-main__links-tour-list;
+            }
+            &-item {
+                & a {
+                    line-height: 14px;
+                }
+            }
+        } */
 }
 
 .footer-main__links-title {
@@ -511,43 +551,23 @@ The `sprites` mixin generates identical output to the CSS template
     color: #64522a;
 }
 
-.footer-main__links-tour,
-.footer-main__links-useful,
-.footer-main__links-print {
-    display: inline-block;
-    width: 30%;
-    margin-right: 14px;
-    padding-left: 14px;
+.footer-main__links-list {
+    font-size: 0;
+    display: table;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.footer-main__links-tour-list,
-.footer-main__links-useful-list,
-.footer-main__links-print-list {
+.footer-main__links-item {
+    line-height: 14px;
     display: inline-block;
-    list-style: none;
+    width: 33%;
+    padding: 5px 14px;
     vertical-align: top;
 }
 
-.footer-main__links-tour-item a,
-.footer-main__links-tour-item .site-header .header-nav__nav-list-item a,
-.site-header .header-nav__nav-list-item .footer-main__links-tour-item a {
-    line-height: 14px;
-}
-
-.footer-main__links-useful-item a,
-.footer-main__links-useful-item .site-header .header-nav__nav-list-item a,
-.site-header .header-nav__nav-list-item .footer-main__links-useful-item a {
-    line-height: 14px;
-}
-
-.footer-main__links-print {
-    margin-right: 0;
-}
-
-.footer-main__links-print-item a,
-.footer-main__links-print-item .site-header .header-nav__nav-list-item a,
-.site-header .header-nav__nav-list-item .footer-main__links-print-item a {
-    line-height: 14px;
+.footer-main__links-item-list {
+    margin-bottom: 0;
 }
 
 .footer-main__contacts {
