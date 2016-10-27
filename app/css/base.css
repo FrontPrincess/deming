@@ -497,46 +497,6 @@ The `sprites` mixin generates identical output to the CSS template
 
 .footer-main__links {
     width: 53%;
-    /* &-tour {
-            display: inline-block;
-            width: 30%;
-            margin-right: 14px;
-            padding-left: 14px;
-            &-list {
-                display: inline-block;
-                list-style: none;
-                vertical-align: top;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        }
-        &-useful {
-            @extend .footer-main__links-tour;
-            &-list {
-                @extend .footer-main__links-tour-list;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        }
-        &-print {
-            margin-right: 0;
-        
-            @extend .footer-main__links-tour;
-            &-list {
-                @extend .footer-main__links-tour-list;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        } */
 }
 
 .footer-main__links-title {
@@ -595,22 +555,20 @@ The `sprites` mixin generates identical output to the CSS template
     margin-bottom: 24px;
 }
 
+.footer-main__contacts-contacts a,
+.footer-main__contacts-contacts .site-header .header-nav__nav-list-item a,
+.site-header .header-nav__nav-list-item .footer-main__contacts-contacts a {
+    display: block;
+}
+
 .footer-main__contacts-contacts a span,
 .footer-main__contacts-contacts .site-header .header-nav__nav-list-item a span,
 .site-header .header-nav__nav-list-item .footer-main__contacts-contacts a span {
     font-weight: bold;
 }
 
-.footer-main__contacts-city {
-    display: block;
-}
-
 .footer-main__contacts-adress {
     display: block;
-}
-
-.footer-main__contacts-adress span {
-    line-height: 14px;
 }
 
 .footer-copyright {

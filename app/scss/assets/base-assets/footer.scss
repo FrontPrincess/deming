@@ -151,46 +151,7 @@
                 margin-bottom: 0;
             }
         }
-        /* &-tour {
-            display: inline-block;
-            width: 30%;
-            margin-right: 14px;
-            padding-left: 14px;
-            &-list {
-                display: inline-block;
-                list-style: none;
-                vertical-align: top;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        }
-        &-useful {
-            @extend .footer-main__links-tour;
-            &-list {
-                @extend .footer-main__links-tour-list;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        }
-        &-print {
-            margin-right: 0;
         
-            @extend .footer-main__links-tour;
-            &-list {
-                @extend .footer-main__links-tour-list;
-            }
-            &-item {
-                & a {
-                    line-height: 14px;
-                }
-            }
-        } */
     }
     &__contacts {
         width: 23%;
@@ -212,19 +173,16 @@
         &-contacts {
             margin-bottom: 24px;
             & a {
+                display: block;
                 & span {
                     font-weight: bold;
                 }
             }
         }
-        &-city {
-            display: block;
-        }
+        
         &-adress {
             display: block;
-            & span {
-                line-height: 14px;
-            }
+            
         }
     }
 }

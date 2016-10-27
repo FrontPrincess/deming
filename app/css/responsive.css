@@ -96,6 +96,7 @@
     .footer-block .footer-main__links {
         float: none;
         width: 100%;
+        margin-bottom: 20px;
     }
     .footer-block .footer-main__links:before,
     .footer-block .footer-main__links:after {
@@ -106,13 +107,40 @@
         padding: 10px;
         text-align: center;
     }
+    .footer-block .footer-main__links-list {
+        width: 88%;
+    }
     .footer-block .footer-main__contacts {
         float: none;
         width: 100%;
+        margin-bottom: 20px;
     }
     .footer-block .footer-main__contacts:before,
     .footer-block .footer-main__contacts:after {
         display: none;
+    }
+    .footer-block .footer-main__contacts-title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .footer-block .footer-main__contacts-contacts {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-block .footer-main__contacts-contacts a {
+        display: inline-block;
+    }
+    .footer-block .footer-main__contacts-phone {
+        margin-right: 10px;
+    }
+    .footer-block .footer-main__contacts-adress {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-block .footer-main__contacts-adress span {
+        display: inline-block;
     }
 }
 /*# sourceMappingURL=sourcemaps/responsive.css.map */

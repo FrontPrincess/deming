@@ -107,37 +107,67 @@
     }
 
     .footer-block {
-    	width: 80%;
-    	margin: 0 auto;
-    	.footer-main {
-    		&__socials {
-    			float: none;
-    			width: 100%;
-    			text-align: center;
-    			&:before {
-    				display: none;
-    			}
-    		}
-    		&__links {
-    			float: none;
-    			width: 100%;
-    			&:before, &:after {
-    				display: none;
-    			}
-    			&-title {
-    				text-align: center;
-    				padding: 10px;
-    				margin-bottom: 20px;
-    			}
-    		}
-    		&__contacts {
-    			float: none;
-    			width: 100%;
-    			
-    			&:before, &:after {
-    				display: none;
-    			}
-    		}
-    	}
+        width: 80%;
+        margin: 0 auto;
+        .footer-main {
+            &__socials {
+                float: none;
+                width: 100%;
+                text-align: center;
+                &:before {
+                    display: none;
+                }
+            }
+            &__links {
+                float: none;
+                width: 100%;
+                margin-bottom: 20px;
+                &:before,
+                &:after {
+                    display: none;
+                }
+                &-title {
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    text-align: center;
+                }
+                &-list {
+                    width: 88%;
+                }
+            }
+            &__contacts {
+                float: none;
+                width: 100%;
+                margin-bottom: 20px;
+                &:before,
+                &:after {
+                    display: none;
+                }
+                &-title {
+                	text-align: center;
+                	margin-bottom: 10px;
+                }
+                &-contacts {
+                	text-align: center;
+                	margin: 0 auto;
+                	width: 50%;
+                    & a {
+                        display: inline-block;
+                    }
+
+                }
+                &-phone {
+                    	margin-right: 10px;
+                    }
+                &-adress {
+                	text-align: center;
+                	margin: 0 auto;
+                	width: 50%;
+                    & span {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
     }
 }
