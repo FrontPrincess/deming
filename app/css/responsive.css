@@ -1,14 +1,15 @@
 @media screen and (max-width: 960px) {
     .site-header .header-nav .header-toggle {
         display: inline-block;
-        margin-left: 100px;
+        margin-left: 30px;
     }
     .site-header .header-nav__nav {
         position: absolute;
         z-index: 1000;
         top: 150px;
-        left: 100px;
+        left: 30px;
         display: none;
+        width: 32%;
         -webkit-transition: all .25s ease-in-out;
         -moz-transition: all .25s ease-in-out;
         -o-transition: all .25s ease-in-out;
@@ -16,6 +17,27 @@
     }
     .site-header .header-nav__nav-list-item {
         display: block;
+    }
+    .site-header .header-nav__nav-list-item:first-child a:hover {
+        background-color: #11941a;
+    }
+    .site-header .header-nav__nav-list-item:nth-child(2) a:hover {
+        background-color: #1e9b20;
+    }
+    .site-header .header-nav__nav-list-item:nth-child(3) a:hover {
+        background-color: #2ca326;
+    }
+    .site-header .header-nav__nav-list-item:nth-child(4) a:hover {
+        background-color: #3aaa2b;
+    }
+    .site-header .header-nav__nav-list-item:nth-child(5) a:hover {
+        background-color: #46b030;
+    }
+    .site-header .header-nav__nav-list-item:nth-child(6) a:hover {
+        background-color: #55b836;
+    }
+    .site-header .header-nav__nav-list-item:last-child a:hover {
+        background-color: #63c03c;
     }
     .site-header .header-nav__nav-list-item a {
         display: block;
@@ -28,6 +50,9 @@
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+    }
+    .breadcrumb-list {
+        margin-left: 100px;
     }
     .main-content {
         float: none;
@@ -55,6 +80,39 @@
     .news-block {
         float: right;
         width: 50%;
+    }
+    .footer-block {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-block .footer-main__socials {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-block .footer-main__socials:before {
+        display: none;
+    }
+    .footer-block .footer-main__links {
+        float: none;
+        width: 100%;
+    }
+    .footer-block .footer-main__links:before,
+    .footer-block .footer-main__links:after {
+        display: none;
+    }
+    .footer-block .footer-main__links-title {
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    .footer-block .footer-main__contacts {
+        float: none;
+        width: 100%;
+    }
+    .footer-block .footer-main__contacts:before,
+    .footer-block .footer-main__contacts:after {
+        display: none;
     }
 }
 /*# sourceMappingURL=sourcemaps/responsive.css.map */
