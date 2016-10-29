@@ -234,6 +234,9 @@
                 padding-left: 0;
                 background-position: 155px 4px;
             }
+            &__info {
+            	padding-right: 0;
+            }
         }
         .header-nav__nav.active {
             top: 250px;
@@ -279,7 +282,7 @@
         width: 100%;
     }
     .footer-title {
-    	font-size: 14px;
+        font-size: 14px;
     }
     .footer-main__links-item {
         width: 100%;
@@ -291,4 +294,19 @@
     .footer-main__contacts-adress {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 384px) {
+    .site-header .header-main__logo {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+	.site-header .header-main__info-list-item a {
+		font-size: 12px;
+	}
+	.main-content__description-title {
+		font-size: 18px;
+	}
 }

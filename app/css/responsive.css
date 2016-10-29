@@ -200,6 +200,9 @@
         padding-left: 0;
         background-position: 155px 4px;
     }
+    .site-header .header-main__info {
+        padding-right: 0;
+    }
     .site-header .header-nav__nav.active {
         top: 250px;
         width: 50%;
@@ -248,6 +251,21 @@
     .footer-main__contacts-contacts,
     .footer-main__contacts-adress {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .site-header .header-main__logo {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .site-header .header-main__info-list-item a {
+        font-size: 12px;
+    }
+    .main-content__description-title {
+        font-size: 18px;
     }
 }
 /*# sourceMappingURL=sourcemaps/responsive.css.map */
