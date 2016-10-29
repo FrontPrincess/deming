@@ -1,4 +1,7 @@
 @media screen and (max-width: 960px) {
+    .site-header .header-main__info {
+        padding-right: 20px;
+    }
     .site-header .header-nav .header-toggle {
         display: inline-block;
         margin-left: 30px;
@@ -61,7 +64,7 @@
     }
     .sidebar {
         float: none;
-        width: 738px;
+        width: 78.3%;
         margin: 0 auto;
     }
     .sidebar:after {
@@ -85,62 +88,166 @@
         width: 80%;
         margin: 0 auto;
     }
-    .footer-block .footer-main__socials {
+    .footer-main__socials {
         float: none;
         width: 100%;
         text-align: center;
     }
-    .footer-block .footer-main__socials:before {
+    .footer-main__socials:before {
         display: none;
     }
-    .footer-block .footer-main__links {
+    .footer-main__links {
         float: none;
         width: 100%;
         margin-bottom: 20px;
     }
-    .footer-block .footer-main__links:before,
-    .footer-block .footer-main__links:after {
+    .footer-main__links:before,
+    .footer-main__links:after {
         display: none;
     }
-    .footer-block .footer-main__links-title {
+    .footer-main__links-title {
         margin-bottom: 20px;
         padding: 10px;
         text-align: center;
     }
-    .footer-block .footer-main__links-list {
+    .footer-main__links-list {
         width: 88%;
     }
-    .footer-block .footer-main__contacts {
+    .footer-main__contacts {
         float: none;
         width: 100%;
         margin-bottom: 20px;
     }
-    .footer-block .footer-main__contacts:before,
-    .footer-block .footer-main__contacts:after {
+    .footer-main__contacts:before,
+    .footer-main__contacts:after {
         display: none;
     }
-    .footer-block .footer-main__contacts-title {
+    .footer-main__contacts-title {
         margin-bottom: 10px;
         text-align: center;
     }
-    .footer-block .footer-main__contacts-contacts {
+    .footer-main__contacts-contacts {
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
-    .footer-block .footer-main__contacts-contacts a {
+    .footer-main__contacts-contacts a {
         display: inline-block;
     }
-    .footer-block .footer-main__contacts-phone {
+    .footer-main__contacts-phone {
         margin-right: 10px;
     }
-    .footer-block .footer-main__contacts-adress {
+    .footer-main__contacts-adress {
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
-    .footer-block .footer-main__contacts-adress span {
+    .footer-main__contacts-adress span {
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .breadcrumb-list {
+        margin-left: 15px;
+    }
+    .sidebar {
+        width: 94.3%;
+    }
+    .footer-block {
+        width: 94.3%;
+    }
+    .footer-block .footer-main__links-list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .my-container {
+        width: 98%;
+    }
+    .tab-content__list-item {
+        width: 48.5%;
+        margin-right: 3%;
+        margin-bottom: 10px;
+    }
+    .tab-content__list-item:nth-child(3n) {
+        margin-right: 3%;
+    }
+    .tab-content__list-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .footer-block {
+        width: 100%;
+    }
+    .footer-copyright {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .site-header .header-main__logo,
+    .site-header .header-main__info {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .site-header .header-main__logo {
+        margin-bottom: 20px;
+        padding-left: 0;
+        background-position: 155px 4px;
+    }
+    .site-header .header-nav__nav.active {
+        top: 250px;
+        width: 50%;
+    }
+    .home-slider {
+        display: none;
+    }
+    .main-content__description-text {
+        width: 100%;
+    }
+    .main-content__description-title {
+        text-align: center;
+    }
+    .main-content__description-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .site-header .header-main__logo {
+        background-position: 61px 4px;
+    }
+    .site-header .header-nav__nav.active {
+        width: 70%;
+    }
+    .main-content__description-title {
+        font-size: 22px;
+    }
+    .tab-content__list-item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .search-block,
+    .news-block {
+        float: none;
+        width: 100%;
+    }
+    .footer-title {
+        font-size: 14px;
+    }
+    .footer-main__links-item {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-main__contacts-contacts,
+    .footer-main__contacts-adress {
+        width: 100%;
     }
 }
 /*# sourceMappingURL=sourcemaps/responsive.css.map */
