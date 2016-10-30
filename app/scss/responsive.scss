@@ -235,7 +235,7 @@
                 background-position: 155px 4px;
             }
             &__info {
-            	padding-right: 0;
+                padding-right: 0;
             }
         }
         .header-nav__nav.active {
@@ -272,6 +272,20 @@
     .main-content__description-title {
         font-size: 22px;
     }
+    .tab-list__list-item {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #cfcdc5;
+        &-link {
+            .triangle {
+                display: none;
+            }
+            .triangle--active {
+                display: none;
+            }
+        }
+    }
+
     .tab-content__list-item {
         width: 100%;
         margin-right: 0;
@@ -303,10 +317,10 @@
 }
 
 @media screen and (max-width: 320px) {
-	.site-header .header-main__info-list-item a {
-		font-size: 12px;
-	}
-	.main-content__description-title {
-		font-size: 18px;
-	}
+    .site-header .header-main__info-list-item a {
+        font-size: 12px;
+    }
+    .main-content__description-title {
+        font-size: 18px;
+    }
 }

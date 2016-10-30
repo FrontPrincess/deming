@@ -231,6 +231,17 @@
     .main-content__description-title {
         font-size: 22px;
     }
+    .tab-list__list-item {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #cfcdc5;
+    }
+    .tab-list__list-item-link .triangle {
+        display: none;
+    }
+    .tab-list__list-item-link .triangle--active {
+        display: none;
+    }
     .tab-content__list-item {
         width: 100%;
         margin-right: 0;
